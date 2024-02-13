@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Landing Page</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" />
+    
+
+    <style>
+        /* CSS styles for header */
+        header {
+            background-color: #370051;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align navigation links */
+        }
+
+        header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px; /* Adjust font size */
+            
+        }
+
+        /* CSS styles for body */
+        .pricing-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #e9baff;
+        }
+
+        .pricing-section h1 {
+            color: #000; 
+            margin-bottom: 20px;
+            
+            
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: center; /* Center align plans */
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .plan {
+            border: 1px solid #000; /* Black border */
+            border-radius: 15px;
+            padding: 20px;
+            background-color:#370051;
+            text-align: center;
+            width: calc(20% - 40px); /* Adjusted width */
+            margin-bottom: 30px;
+            margin-right: 30px;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .plan:hover {
+            background-color: #370051; /* Orange color */
+        }
+
+        .plan h2 {
+            color: #fff;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #fff; 
+            margin-bottom: 15px; 
+            
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;color: #fff; 
+        }
+
+        button {
+            background-color: #8b0000; 
+            color: #fff; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #b5406c; 
+            color: #fff; 
+        }
+
+        /* CSS styles for footer */
+        footer {
+            background-color: #370051; 
+            color: #fff; /* Orange color */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .copyright {
+            text-align: center; /* Center align copyright text */
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+ /* Media Query for Mobile View */
+        @media (max-width: 768px) {
+            .pricing-section {
+                padding: 50px 10px; /* Adjusted padding for mobile view */
+            }
+
+            .plan {
+                width: calc(50% - 20px); /* Adjusted width for mobile view */
+                margin-right: 0; /* Remove right margin for mobile view */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://motioncut.shop/cdn/shop/files/imim_130x.png?v=1703776949" alt="Company Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="pricing-section">
+        <h1>Our Pricing Plans</h1>
+        <section class="pricing-plans">
+            <!-- Pricing plans -->
+            <div class="plan">
+                <h2>Basic</h2>
+                <p class="price">₹100/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>><</li>
+                    <li>><</li>
+                    
+                </ul>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h2>Pro</h2>
+                <p class="price">₹200/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>><</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+            <div class="plan">
+                <h2>Premium</h2>
+                <p class="price">₹300/month</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                    <li>Feature 5</li>
+                </ul>
+                <button>Select Plan</button>
+            </div>
+        </section>
+        <div class="choose-plan">
+            <p>Choose the plan that suits your needs.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-container"></div>
+        <p class="copyright">Copyright owned by Yatham AbhiRam</p>
+    </footer>
+</body>
+</html>
